@@ -28,7 +28,7 @@ function App() {
   // }, []);
 
   return (
-    <div className="w-auto inline-block">
+    <div className="flex justify-center items-center">
       <button
         onClick={() => setShowModal(true)}
         className="p-2 bg-blue-600 rounded-lg text-white"
