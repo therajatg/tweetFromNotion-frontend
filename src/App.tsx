@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { TweetModal } from "./components/TweetModal";
 
@@ -15,8 +15,20 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    // Set the body and html styles to make the content compact
+    document.documentElement.style.margin = "0";
+    document.documentElement.style.padding = "0";
+    document.documentElement.style.display = "inline-block";
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.margin = "0";
+    document.body.style.padding = "0";
+    document.body.style.display = "inline-block";
+    document.body.style.overflow = "hidden";
+  }, []);
+
   return (
-    <div className="flex justify-center items-center">
+    <div className="w-auto inline-block">
       <button
         onClick={() => setShowModal(true)}
         className="p-2 bg-blue-600 rounded-lg text-white"
