@@ -15,17 +15,17 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    // Set the body and html styles to make the content compact
-    document.documentElement.style.margin = "0";
-    document.documentElement.style.padding = "0";
-    document.documentElement.style.display = "inline-block";
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.margin = "0";
-    document.body.style.padding = "0";
-    document.body.style.display = "inline-block";
-    document.body.style.overflow = "hidden";
-  }, []);
+  // useEffect(() => {
+  //   // Set the body and html styles to make the content compact
+  //   document.documentElement.style.margin = "0";
+  //   document.documentElement.style.padding = "0";
+  //   document.documentElement.style.display = "inline-block";
+  //   document.documentElement.style.overflow = "hidden";
+  //   document.body.style.margin = "0";
+  //   document.body.style.padding = "0";
+  //   document.body.style.display = "inline-block";
+  //   document.body.style.overflow = "hidden";
+  // }, []);
 
   return (
     <div className="w-auto inline-block">
