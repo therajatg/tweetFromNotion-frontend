@@ -7,7 +7,9 @@ function App() {
 
   const handleAddTweet = async (tweetContent: string) => {
     try {
-      await axios.post("/add-new-tweet", { tweetContent });
+      await axios.post("https://twitter.promdate.live/add-new-tweet", {
+        tweetContent,
+      });
     } catch (error) {
       console.log("failed", error);
     }
