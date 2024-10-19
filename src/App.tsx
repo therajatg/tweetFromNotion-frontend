@@ -16,8 +16,13 @@ function App() {
   };
 
   return (
-    <div>
-      <button onClick={() => setShowModal(true)}>Add New Tweet</button>
+    <div className="flex justify-center items-center">
+      <button
+        onClick={() => setShowModal(true)}
+        className="p-2 bg-blue-600 rounded-lg text-white"
+      >
+        Add New Tweet
+      </button>
       <TweetModal
         show={showModal}
         onClose={() => setShowModal(false)}
